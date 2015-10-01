@@ -20,5 +20,5 @@ func merge_sort(array []int) {
 }
 
 func merge(left, right []int) {
-     
+     // TODO     
 }
