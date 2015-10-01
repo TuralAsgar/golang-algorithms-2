@@ -2,6 +2,7 @@ package sorting
 
 import (
 	"testing"
+	"fmt"
 )
 
 /* Tests Section */
@@ -10,6 +11,7 @@ func testBubble(array []int, t * testing.T) {
     bubble_sort(array)
     for index, x := range array {
         if index > 0 && x < array[index -1] {
+			fmt.Println("Out of order:", x, "<", array[index -1])
             t.FailNow()
         }
     }
