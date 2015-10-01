@@ -11,6 +11,5 @@ func selection_sort(array []int) {
 	 if min != index {
      	    swap(array, index, min)
      	 }
-
      }
 }
